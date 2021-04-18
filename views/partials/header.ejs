@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>technology</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/stylesheet/main.css"> 
+		<style>
+			body {
+					background-image: url("https://st2.depositphotos.com/8843414/12482/v/950/depositphotos_124821952-stock-illustration-vector-background-abstract-clean-technology.jpg");
+					background-size: cover;
+					background-position: center;
+			}
+			html {
+					height: 100%;
+			}
+		</style>
+
+	</head>
+	<body>
+		<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="/">blue space</a>
+			</div>
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-right">
+				<% if(!currentuser){ %>
+					<li><a href="/login">login</a><li>
+					<li><a href="/register">sign up</a><li>
+				<% } else { %>
+					<li><a href="/logout">logout</a><li>
+				<% } %>
+					
+					
+				</ul>
+			</div>
+		</div>	
+	</nav>
